@@ -1,0 +1,175 @@
+body{
+	background-image: url("../images/starwars_xwing.jpg");
+
+
+}
+
+#title{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 25%;
+	margin-top: 40px;
+}
+
+
+
+/*.Characters-selected{
+	position: absolute;
+	top: 500px;
+}*/
+
+/*OBI-WAN CSS*/
+
+
+
+.OBI-WAN{
+	width: 200px;
+	height: 160px;
+	background-color: white;
+	border: 5px solid green;
+	margin-left: 10px;
+	float: left;
+}
+
+.OBI-WAN-User{
+	position: absolute;
+	clear: both;
+	top: 100px;
+}
+
+#obi-wan_name{
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+#Obi-Wan-Image{
+	width: 80%;
+	height: 70%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+}
+
+#obi-wan_health_points{
+	text-align: center;
+	margin-bottom: 2.5%;
+}
+
+/*LUKE SKYWALKER CSS*/
+
+.luke_Skywalker{
+	width: 200px;
+	height: 160px;
+	background-color: white;
+	border: 5px solid green;
+	float: left;
+}
+
+.luke_Skywalker-User{
+	position: absolute;
+	top: 400px;
+}
+
+#lukeskywalker_name{
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+#lukeskywalker-Image{
+	width: 80%;
+	height: 70%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+}
+
+#lukeskywalker_health_points{
+	text-align: center;
+	margin-bottom: 2.5%;
+}
+
+/*Darth Sidious CSS*/
+.darth_sidious{
+	width: 200px;
+	height: 160px;
+	background-color: white;
+	border: 5px solid green;
+	float: left;
+}
+
+.darth_sidious-User{
+	position: absolute;
+	top: 400px;
+}
+
+#darth_sidious_name{
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+#darth_sidious-Image{
+	width: 80%;
+	height: 70%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+}
+
+#darth_sidious_health_points{
+	text-align: center;
+	margin-bottom: 2.5%;
+}
+	
+
+/*Darth Maul CSS*/
+
+.darth_maul{
+	width: 200px;
+	height: 160px;
+	background-color: white;
+	border: 5px solid green;
+	float: left;
+}
+
+#darth_maul_name{
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+#darth_maul-Image{
+	width: 80%;
+	height: 70%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+}
+
+#darth_maul_health_points{
+	text-align: center;
+	margin-bottom: 2.5%;
+}
+
+h2{
+	text-align: right;	
+}
+
+#your_character{
+	font-size: 35px;
+	clear: both;
+	/*margin-left: 2.5%;*/
+}
+
+#Enemies_Statement{
+	clear: both;
+	font-size: 35px;
+}
+
+.Enemies{
+	clear: both;
+}
+
+.fight{
+	clear: both;
+	font-size: 35px;
+}

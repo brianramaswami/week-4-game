@@ -28,8 +28,8 @@ body{
 	height: 160px;
 	background-color: white;
 	border: 5px solid green;
-	margin-left: 10px;
-	float: left;
+/*	margin-left: 10px;
+*/	float: left;
 }
 
 .OBI-WAN-User{
@@ -157,19 +157,22 @@ h2{
 #your_character{
 	font-size: 35px;
 	clear: both;
-	/*margin-left: 2.5%;*/
+	margin-left: 10px;
 }
 
 #Enemies_Statement{
 	clear: both;
 	font-size: 35px;
+	
 }
 
 .Enemies{
 	clear: both;
+	margin-left: 10px;
 }
 
 .fight{
 	clear: both;
 	font-size: 35px;
+	margin-left: 10px;
 }

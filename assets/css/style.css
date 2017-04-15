@@ -27,9 +27,8 @@ body{
 	width: 200px;
 	height: 160px;
 	background-color: white;
-	border: 5px solid green;
-/*	margin-left: 10px;
-*/	float: left;
+	border: 3px solid green;
+	float: left;
 }
 
 .OBI-WAN-User{
@@ -62,7 +61,7 @@ body{
 	width: 200px;
 	height: 160px;
 	background-color: white;
-	border: 5px solid green;
+	border: 3px solid green;
 	float: left;
 }
 
@@ -94,7 +93,7 @@ body{
 	width: 200px;
 	height: 160px;
 	background-color: white;
-	border: 5px solid green;
+	border: 3px solid green;
 	float: left;
 }
 
@@ -128,7 +127,7 @@ body{
 	width: 200px;
 	height: 160px;
 	background-color: white;
-	border: 5px solid green;
+	border: 3px solid green;
 	float: left;
 }
 
@@ -157,6 +156,11 @@ h2{
 #your_character{
 	font-size: 35px;
 	clear: both;
+	
+}
+
+.your_character{
+	clear: both;
 	margin-left: 10px;
 }
 
@@ -174,5 +178,26 @@ h2{
 .fight{
 	clear: both;
 	font-size: 35px;
+	margin-left: 10px;
+}
+
+#defender_text{
+	clear: both;
+	font-size: 35px;
+	
+}
+
+.defender{
+	clear: both;
+	margin-left: 10px;
+}
+
+#result_statement{
+	clear: both;
+	font-size: 35px;
+}
+
+.results{
+	clear: both;
 	margin-left: 10px;
 }

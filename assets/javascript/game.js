@@ -11,7 +11,7 @@ var number_enemies = 3;
 var OBI_WAN_Base_Attack = 8;
 var OBI_WAN_Attack = 8;
 var OBI_WAN_Counter_Attack = 15;
-var OBI_WAN_Health = 1200;
+var OBI_WAN_Health = 120;
 
 var luke_Base_Attack = 7;
 var luke_Attack = 7;
@@ -261,6 +261,7 @@ function didWin() {
 		}
 		step = 2;
 		place_enemy();
+		// $("#result_statement").text("");
 	}
 }
 
@@ -304,7 +305,7 @@ function Reset() {
 	OBI_WAN_Base_Attack = 8;
 	OBI_WAN_Attack = 8;
 	OBI_WAN_Counter_Attack = 15;
-	OBI_WAN_Health = 1200;
+	OBI_WAN_Health = 120;
 
 	luke_Base_Attack = 7;
 	luke_Attack = 7;
@@ -320,7 +321,7 @@ function Reset() {
 	darth_maul_Attack = 9;
 	darth_maul_Counter_Attack = 25;
  	darth_maul_Health = 180;
- 	
+
  	$('.darth_sidious').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
  	$('.luke_Skywalker').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
  	$('.OBI-WAN').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
@@ -330,7 +331,7 @@ function Reset() {
  	$("#obi-wan_health_points").text(OBI_WAN_Health);
  	$("#lukeskywalker_health_points").text(luke_Health);
  	$("#darth_sidious_health_points").text(darth_sidious_Health);
- 	$("#darth_maul_Health").text(darth_maul_Health);
+ 	$("#darth_maul_health_points").text(darth_maul_Health);
 
  
 }
@@ -360,7 +361,7 @@ function INITIALIZE() {
 	luke_Base_Attack = 7;
 	luke_Attack = 7;
 	luke_Counter_Attack = 20;
-	luke_Health = 1000;
+	luke_Health = 100;
 
 	darth_sidious_Base_Attack = 10;
 	darth_sidious_Attack = 10
@@ -374,7 +375,7 @@ function INITIALIZE() {
  	$("#obi-wan_health_points").text(OBI_WAN_Health);
  	$("#lukeskywalker_health_points").text(luke_Health);
  	$("#darth_sidious_health_points").text(darth_sidious_Health);
- 	$("#darth_maul_Health").text(darth_maul_Health);
+ 	$("#darth_maul_health_points").text(darth_maul_Health);
 }
 
 
@@ -482,11 +483,6 @@ $(window).on('load',function() {
     		place_enemy();
 
     	});
-
-
-
-
-
 
 
 

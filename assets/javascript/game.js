@@ -139,7 +139,102 @@ function place_enemy() {
 					luke_Attack = luke_Attack + luke_Base_Attack;
 				}
 
-			
+			if (current_character == "luke_Skywalker" && current_defender == "darth_maul"){
+					darth_maul_Health =  darth_maul_Health - luke_Attack;
+					current_defender_health = darth_maul_Health;
+					$("#darth_maul_health_points").text(darth_maul_Health);
+					didWin();
+					luke_Health = luke_Health - darth_maul_Counter_Attack;
+					current_character_health = luke_Health;
+					$("#lukeskywalker_health_points").text(luke_Health);
+					didLose();
+					luke_Attack = luke_Attack + luke_Base_Attack;
+				}			
+
+			if (current_character == "luke_Skywalker" && current_defender == "darth_sidious"){
+					darth_sidious_Health =  darth_sidious_Health - luke_Attack;
+					current_defender_health = darth_sidious_Health;
+					$("#darth_sidious_health_points").text(darth_sidious_Health);
+					didWin();
+					luke_Health = luke_Health - darth_sidious_Counter_Attack;
+					current_character_health = luke_Health;
+					$("#lukeskywalker_health_points").text(luke_Health);
+					didLose();
+					luke_Attack = luke_Attack + luke_Base_Attack;
+				}
+
+			if (current_character == "darth_sidious" && current_defender == "OBI-WAN"){
+					OBI_WAN_Health =  OBI_WAN_Health - darth_sidious_Attack;
+					current_defender_health = OBI_WAN_Health;
+					$("#obi-wan_health_points").text(OBI_WAN_Health);
+					didWin();
+					darth_sidious_Health = darth_sidious_Health - OBI_WAN_Counter_Attack;
+					current_character_health = darth_sidious_health_points;
+					$("#darth_sidious_health_points").text(darth_sidious_Health);
+					didLose();
+					darth_sidious_Attack = darth_sidious_Attack + darth_sidious_Base_Attack;
+				}	
+
+			if (current_character == "darth_sidious" && current_defender == "luke_Skywalker"){
+					luke_Health =  luke_Health - darth_sidious_Attack;
+					current_defender_health = luke_Health;
+					$("#lukeskywalker_health_points").text(luke_Health);
+					didWin();
+					darth_sidious_Health = darth_sidious_Health - luke_Counter_Attack;
+					current_character_health = darth_sidious_health_points;
+					$("#darth_sidious_health_points").text(darth_sidious_Health);
+					didLose();
+					darth_sidious_Attack = darth_sidious_Attack + darth_sidious_Base_Attack;
+				}	
+
+			if (current_character == "darth_sidious" && current_defender == "darth_maul"){
+					darth_maul_Health =  darth_maul_Health - darth_sidious_Attack;
+					current_defender_health = darth_maul_Health;
+					$("#darth_maul_health_points").text(darth_maul_Health);
+					didWin();
+					darth_sidious_Health = darth_sidious_Health - darth_maul_Counter_Attack;
+					current_character_health = darth_sidious_health_points;
+					$("#darth_sidious_health_points").text(darth_sidious_Health);
+					didLose();
+					darth_sidious_Attack = darth_sidious_Attack + darth_sidious_Base_Attack;
+				}	
+
+			if (current_character == "darth_maul" && current_defender == "OBI-WAN"){
+					OBI_WAN_Health =  OBI_WAN_Health - darth_maul_Attack;
+					current_defender_health = OBI_WAN_Health;
+					$("#obi-wan_health_points").text(OBI_WAN_Health);
+					didWin();
+					darth_maul_Health = darth_maul_Health - OBI_WAN_Counter_Attack;
+					current_character_health = darth_sidious_health_points;
+					$("#darth_maul_health_points").text(darth_maul_Health);
+					didLose();
+					darth_maul_Attack = darth_maul_Attack + darth_maul_Base_Attack;
+				}	
+
+			if (current_character == "darth_maul" && current_defender == "luke_Skywalker"){
+					luke_Health =  luke_Health - darth_maul_Attack;
+					current_defender_health = luke_Health;
+					$("#lukeskywalker_health_points").text(luke_Health);
+					didWin();
+					darth_maul_Health = darth_maul_Health - luke_Counter_Attack;
+					current_character_health = darth_sidious_health_points;
+					$("#darth_maul_health_points").text(darth_maul_Health);
+					didLose();
+					darth_maul_Attack = darth_maul_Attack + darth_maul_Base_Attack;
+				}	
+
+			if (current_character == "darth_maul" && current_defender == "darth_sidious"){
+					darth_sidious_Health =  darth_sidious_Health - darth_maul_Attack;
+					current_defender_health = darth_sidious_Health;
+					$("#darth_sidious_health_points").text(darth_sidious_Health);
+					didWin();
+					darth_maul_Health = darth_maul_Health - darth_sidious_Counter_Attack;
+					current_character_health = darth_sidious_health_points;
+					$("#darth_maul_health_points").text(darth_maul_Health);
+					didLose();
+					darth_maul_Attack = darth_maul_Attack + darth_maul_Base_Attack;
+				}	
+
 
 
 
@@ -185,13 +280,14 @@ $("#button_reset").click(function(){
 });
 
 function Reset() {
-	$("." + current_character).remove();
-	$(".OBI-WAN").appendTo("Characters");
-	$(".luke_Skywalker").appendTo("Characters");
-	$(".darth_sidious").appendTo("Characters");
-	$(".darth_maul").appendTo("Characters");
+	// $("." + current_character).remove();
+	$(".OBI-WAN").appendTo(".Characters");
+	$(".luke_Skywalker").appendTo(".Characters");
+	$(".darth_sidious").appendTo(".Characters");
+	$(".darth_maul").appendTo(".Characters");
 	$("#button").show();
 	$("#button_reset").hide();
+	$("#result_statement").text("");
 
 	step = 1;
 	current_character = "";
@@ -220,10 +316,18 @@ function Reset() {
 	darth_maul_Attack = 9;
 	darth_maul_Counter_Attack = 25;
  	darth_maul_Health = 180;
+ 	$('.darth_sidious').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
+ 	$('.luke_Skywalker').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
+ 	$('.OBI-WAN').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
+ 	$('.darth_maul').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
+
+
  	$("#obi-wan_health_points").text(OBI_WAN_Health);
  	$("#lukeskywalker_health_points").text(luke_Health);
  	$("#darth_sidious_health_points").text(darth_sidious_Health);
  	$("#darth_maul_Health").text(darth_maul_Health);
+
+ 
 }
 
 

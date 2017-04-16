@@ -252,7 +252,7 @@ function didWin() {
 		console.log(number_enemies);
 		number_enemies--;
 		console.log(number_enemies);
-		$("." + current_defender).remove();
+		$("." + current_defender).hide();
 		$("#result_statement").text("You Defeated " + current_defender + ". Please Choose Another Enemy To Fight");
 		if (number_enemies == 0) {
 			$("#result_statement").text("You Won Click The Reset Button To Play Again!!");
@@ -288,6 +288,10 @@ function Reset() {
 	$("#button").show();
 	$("#button_reset").hide();
 	$("#result_statement").text("");
+	$(".OBI-WAN").show();
+	$(".luke_Skywalker").show();
+	$(".darth_sidious").show();
+	$(".darth_maul").show();
 
 	step = 1;
 	current_character = "";
@@ -316,6 +320,7 @@ function Reset() {
 	darth_maul_Attack = 9;
 	darth_maul_Counter_Attack = 25;
  	darth_maul_Health = 180;
+ 	
  	$('.darth_sidious').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
  	$('.luke_Skywalker').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
  	$('.OBI-WAN').css({'background':'white', 'border' : '3px solid green', 'color': 'black'});
